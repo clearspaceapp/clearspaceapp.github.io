@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClearSpace – Photo Cleanup</title>
+<meta name="description" content="Find similar shots, exact copies, large videos and blurry photos. Swipe to decide, review before deleting. Everything stays on your phone.">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root { --bg: #f6f7fb; --card: #ffffff; --ink: #1d2033; --muted: #5b6075; --accent: #4553d6; --hero1: #1c1f4a; --hero2: #3b3f9e; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #14151d; --card: #1d1f2b; --ink: #eceef8; --muted: #a3a8bd; --accent: #a8b2ff; } }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color: var(--accent); }
+  header { background: linear-gradient(160deg, var(--hero1), var(--hero2)); color: #fff; text-align: center; padding: 64px 16px 56px; }
+  header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 12px 32px rgba(0,0,0,.35); }
+  header h1 { font-size: clamp(2rem, 6vw, 3rem); line-height: 1.1; margin: 20px 0 8px; }
+  header p { max-width: 560px; margin: 0 auto; color: rgba(255,255,255,.82); font-size: 1.1rem; }
+  .soon { display: inline-block; margin-top: 24px; padding: 8px 18px; border-radius: 999px; background: rgba(255,255,255,.14); font-weight: 600; font-size: .95rem; }
+  main { max-width: 960px; margin: 0 auto; padding: 48px 16px 64px; }
+  .shots { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 48px; }
+  .shots img { width: 100%; border-radius: 18px; display: block; }
+  @media (max-width: 640px) { .shots { grid-template-columns: 1fr; max-width: 320px; margin-inline: auto; } }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+  .feature { background: var(--card); border-radius: 16px; padding: 20px 22px; }
+  .feature h2 { font-size: 1.05rem; margin: 0 0 6px; }
+  .feature p { margin: 0; color: var(--muted); font-size: .97rem; }
+  footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 0 16px 48px; }
+  footer a { margin: 0 10px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="img/icon.png" alt="ClearSpace app icon">
+  <h1>ClearSpace</h1>
+  <p>Find similar shots, exact copies, large videos and blurry photos. Swipe to decide, review before deleting. Everything stays on your phone.</p>
+  <span class="soon">Coming soon to Google Play</span>
+</header>
+<main>
+  <div class="shots">
+    <img src="img/shot-1.jpg" alt="Your whole library sorted into categories">
+    <img src="img/shot-2.jpg" alt="Keep the best photo from similar shots">
+    <img src="img/shot-3.jpg" alt="Swipe through photos to keep or set aside">
+  </div>
+  <div class="features">
+    <div class="feature"><h2>Your library, sorted</h2><p>Videos, screenshots, large videos, exact copies, similar photos, selfies and blurry photos in clear categories.</p></div>
+    <div class="feature"><h2>Keep the best shot</h2><p>Similar photos are grouped with a suggested keeper and the reason for it.</p></div>
+    <div class="feature"><h2>Exact copies, verified</h2><p>A file check compares the actual contents, and at least one copy always stays.</p></div>
+    <div class="feature"><h2>Swipe to tidy</h2><p>Right to keep, left to set aside. Your progress is saved.</p></div>
+    <div class="feature"><h2>Shrink videos</h2><p>Make large videos smaller and keep the memory, with a preview before you replace anything.</p></div>
+    <div class="feature"><h2>Private by design</h2><p>All analysis happens on your device. No account, no ads, no tracking.</p></div>
+  </div>
+</main>
+<footer>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="mailto:mobirexa@gmail.com">Contact</a>
+  <p>© 2026 ClearSpace</p>
+</footer>
+</body>
+</html>
