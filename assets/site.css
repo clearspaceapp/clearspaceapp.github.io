@@ -50,7 +50,8 @@ body {
   font-optical-sizing: auto;
 }
 
-img { display: block; max-width: 100%; }
+/* height: auto keeps the aspect ratio when CSS changes the width of an image with size attributes. */
+img { display: block; max-width: 100%; height: auto; }
 h1, h2, h3, .finds p { text-wrap: balance; }
 a { color: var(--indigo); text-underline-offset: 0.18em; }
 a:focus-visible, summary:focus-visible, button:focus-visible {
